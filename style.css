@@ -110,7 +110,7 @@ html{
 
 /* -- MENU mobile -- */
 .menu-btn{
-  color: var(--body-color);
+  color: #fff;
   font-size: 26px;
   cursor: pointer;
   display: none;
@@ -155,17 +155,16 @@ i {
 }
 
 .wrapper .button {
-  display: block;
+  display: inline-block;
   width: 80px;
   height: 80px;
-  float: left;
   margin: 0 5px;
   background: var(--color-primary);
   border-radius: 50px;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .wrapper .button:hover .icon{
@@ -175,6 +174,8 @@ i {
 
 .wrapper .button .icon{
   display: inline-block;
+  align-items: center;
+  justify-content: center;
   width: 80px;
   height: 80px;
   border-radius: 50px;
@@ -183,11 +184,13 @@ i {
   transition: all 0.3s ease-out;
 }
 
-.wrapper .button .icon i {
+.wrapper .button .icon i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
   font-size: 35px;
-  margin: 10px -120px;
   line-height: 60px;
-  margin-left: 24px;
   transition: all 0.3s ease-out;
 }
 
@@ -203,42 +206,42 @@ i {
 }
 
 /*style icons*/
-.wrapper .button:nth-child(1):hover .icon{
+.wrapper .button:nth-last-child(11):hover .icon{
   background-color: #4267b2;
 }
-.wrapper .button:nth-child(2):hover .icon{
+.wrapper .button:nth-last-child(9):hover .icon{
   background-color: #4267b2;
 }
-.wrapper .button:nth-child(3):hover .icon{
+.wrapper .button:nth-last-child(7):hover .icon{
   background-color: #4267b2;
 }
-.wrapper .button:nth-child(4):hover .icon{
+.wrapper .button:nth-last-child(5):hover .icon{
   background-color: #05a354;
 }
-.wrapper .button:nth-child(5):hover .icon{
+.wrapper .button:nth-last-child(3):hover .icon{
   background-color: #e1306c;
 }
-.wrapper .button:nth-child(6):hover .icon{
+.wrapper .button:nth-last-child(1):hover .icon{
   background-color: #4267b2;
 }
 
 /*style font icons */
-.wrapper .button:nth-child(1):hover span {
+.wrapper .button:nth-last-child(11):hover span {
   color: #4267b2;
 }
-.wrapper .button:nth-child(2):hover span {
+.wrapper .button:nth-last-child(9):hover span {
   color: #4267b2;
 }
-.wrapper .button:nth-child(3):hover span {
+.wrapper .button:nth-last-child(7):hover span {
   color: #4267b2;
 }
-.wrapper .button:nth-child(4):hover span {
+.wrapper .button:nth-last-child(5):hover span {
   color: #05a354;
 }
-.wrapper .button:nth-child(5):hover span {
+.wrapper .button:nth-last-child(3):hover span {
   color: #e1306c;
 }
-.wrapper .button:nth-child(6):hover span {
+.wrapper .button:nth-last-child(1):hover span {
   color: #4267b2;
 }
 
@@ -631,6 +634,7 @@ footer span a:hover{
     display: block;
     z-index: 999;
   }
+
   .navbar .menu{
     position: fixed;
     width: 100%;
