@@ -404,7 +404,7 @@ section .title::after{
   background: #222;
   color: var(--text-color-light);
   border-radius: 6px;
-  padding: 25px 35px;
+  padding: 25px;
   text-align: center;
   transition: all 0.3s ease;
 }
