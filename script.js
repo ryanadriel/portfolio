@@ -28,6 +28,10 @@ $(document).ready(function () {
     $('.menu-btn i').toggleClass('active')
   })
 
+  $('.navbar .menu').click(function () {
+    $('.navbar .menu').removeClass('active')
+  })
+
   $('.carousel').owlCarousel({
     margin: 20,
     loop: true,
